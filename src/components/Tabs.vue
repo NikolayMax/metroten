@@ -46,11 +46,11 @@
         border-bottom: 1px solid #ccc;
     }
     .tabs-header-item{
-        padding: 10px 20px;
+        padding: 10px 30px;
         color: #751011;
-        font-weight: bold;
         font-size: 18px;
         cursor: pointer;
+        font-family: 'Heebo-Medium';
     }
     .tabs-header-item-selected{
         border-bottom: 2px solid #751011;

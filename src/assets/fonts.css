@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Heebo-Thin';
+    src: url('./z-task/Heebo/Heebo-Thin.ttf');
+    src: url('./z-task/Heebo/Heebo-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('./z-task/Heebo/Heebo-Regular.ttf');
+    src: url('./z-task/Heebo/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url('./z-task/Heebo/Heebo-Bold.ttf');
+    src: url('./z-task/Heebo/Heebo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heebo-Medium';
+    src: url('./z-task/Heebo/Heebo-Medium.ttf');
+    src: url('./z-task/Heebo/Heebo-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

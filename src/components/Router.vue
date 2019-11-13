@@ -1,6 +1,6 @@
 <template>
     <div class="router-wrapper">
-        <h1>Settings</h1>
+        <h1 class="router-title">Settings</h1>
         <Tabs
             :items="tabs"
         />
@@ -58,6 +58,10 @@
         margin-left: 250px;
         padding: 0px 20px 0px 80px;
     }
+    .router-title{
+        text-align: left;
+        font-family: 'Heebo-Thin';
+    }
     .flex{
         display: flex;
         align-items: center;
@@ -71,8 +75,8 @@
         text-transform: uppercase;
         border-radius: 5px;
         color: #fff;
-        font-weight: 900;
         font-size: 14px;
+        font-family: 'Heebo-Bold';
         border: 0px;
         cursor: pointer;
     }
@@ -81,7 +85,7 @@
     }
     .link-calcel{
         color: #a42520;
-        font-weight: 600;
+        font-family: 'Heebo-Medium';
         text-decoration: none;
     }
     .link-calcel:hover{

@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="slider-form">
-            <input type="time" v-model="startTime" :max="endTime" min="00:00">
+            <input type="time" v-model="startTime" :max="endTime" min="00:00" class="slider-input-time">
             -
-            <input type="time" v-model="endTime" max="24:00" :min="startTime">
+            <input type="time" v-model="endTime" max="24:00" :min="startTime" class="slider-input-time">
         </div>
         <div class="slider-wrapper" ref="sliderWrapper">
             <div class="slider-circle slider-circle-left"
@@ -45,11 +45,13 @@
                 let maxMinutes = 1440;
                 let curMin = moment(val,'HH:mm').hours()*60+moment(val,'HH:mm').minutes();
                 this.left = (100 * curMin)/ maxMinutes;
+                this.calculate();
             },
             endTime(val){
                 let maxMinutes = 1440;
                 let curMin = moment(val,'HH:mm').hours()*60+moment(val,'HH:mm').minutes();
                 this.right = (100 * curMin)/ maxMinutes;
+                this.calculate();
             }
         },
         methods:{
@@ -150,14 +152,17 @@
         top: 0px;
     }
     .slider-circle{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         background-color: #fff;
-        box-shadow: 0px 0px 16px -5px #000;
+        box-shadow: 0px 0px 5px -1px #000;
         border-radius: 50%;
         position: absolute;
         top: 0px;
         z-index: 1;
         cursor: pointer;
+    }
+    .slider-input-time{
+        border-radius: 3px;
     }
 </style>

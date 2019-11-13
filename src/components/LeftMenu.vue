@@ -59,7 +59,7 @@
     .left-menu-link-name,
     .left-menu-user-name{
         font-size: 18px;
-        font-weight: bold;
+        font-family: 'Heebo-Medium';
     }
     .left-menu-user{
         padding: 10px 20px;
